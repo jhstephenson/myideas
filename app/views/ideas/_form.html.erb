@@ -1,0 +1,20 @@
+<%= simple_form_for(@idea) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description, label: "Describe your idea", placeholder: "(1-2 sentences)" %>
+    <%= f.input :customer, label: "Who is your customer?", placeholder: "(Who are you selling to?)" %>
+    <%= f.input :problem, label: "What problem are you solving?", placeholder: "(What itch are you scratching? Or what benefit are you delivering?)" %>
+    <%= f.input :business_model, label: "What business model do you think you would use?", placeholder: "(descrube how you would sell the product/service)" %>
+    <%= f.input :experience, label: "I have experience in this field?" %>
+    <%= f.input :passionate, label: "I am passionate in this field?" %>
+    <%= f.input :hobbies, label: "I have hobbies that are related to this field?" %>
+    <%= f.input :rank, label: "My Ranking" %>
+    <%= f.input :enthusiasm, label: "How enthusiastic am I about this idea?" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

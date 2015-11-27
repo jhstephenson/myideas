@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @idea.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @idea.description %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @idea.customer %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @idea.problem %>
+</p>
+
+<p>
+  <strong>Business model:</strong>
+  <%= @idea.business_model %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @idea.experience %>
+</p>
+
+<p>
+  <strong>Passionate:</strong>
+  <%= @idea.passionate %>
+</p>
+
+<p>
+  <strong>Hobbies:</strong>
+  <%= @idea.hobbies %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @idea.rank %>
+</p>
+
+<p>
+  <strong>Enthusiasm:</strong>
+  <%= @idea.enthusiasm %>
+</p>
+
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', ideas_path %>
